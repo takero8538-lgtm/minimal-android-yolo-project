@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    >
+
+    <Button
+        android:id="@+id/selectModelBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="モデルファイルを選択" />
+
+    <Button
+        android:id="@+id/selectImageBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="写真を撮るか画像を選択"
+        android:layout_marginTop="12dp" />
+
+    <Button
+        android:id="@+id/inferBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="推論開始"
+        android:layout_marginTop="20dp"
+        android:enabled="false"
+        android:backgroundTint="#6200EE"
+        android:textColor="#FFFFFF" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scaleType="fitCenter"
+        android:contentDescription="選択した画像プレビュー"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:id="@+id/resultText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="推論結果がここに表示されます"
+        android:textSize="18sp"
+        android:textColor="#004080"
+        android:layout_marginTop="20dp"
+        />
+</LinearLayout>
